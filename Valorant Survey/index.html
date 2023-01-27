@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1 id="title">Valorant Survey</h1>
+   <p id="description"><i>Kindly fill out the form below!</i></p>
+   <form id="survey-form">
+    <fieldset>
+        <div class="form-group">
+        <label for="name-label" id="name-label">
+            Name:
+            <input type="text" id="name" name="name-label" value="Katherine Lewis" placeholder="Enter full name" required />
+        </label></div>
+        <div class="form-group">
+        <label for="email-label" id="email-label">
+            Email:
+            <input type="email" id="email" name="email-label" placeholder="Enter your email here" value="abcd@gmail.com" required>
+        </label></div>
+    <div class="form-group">
+        <label for="number-label" id="number-label">
+            Age(optional):
+            <input type="number" id="number" name="number-label" min="10" max="100" placeholder="Enter your age" value="age">
+        </label></div>
+    <div class="form-group">
+        <label for="role">
+            Which is your best agent?
+            <select id="dropdown" name="role">
+                <option value="" disabled selected>Select any one agent</option>
+                <option value="1">Jett</option>
+                <option value="2">Sage</option>
+                <option value="3">Killjoy</option>
+                <option value="4">Reyna</option>
+                <option value="5">Harbor</option>
+                <option value="6">Neon</option>
+                <option value="7">Other</option>
+            </select>
+        </label></div>
+    <div class="form-group">
+        <label for="definitely">
+            Would you recommend Valorant to a friend?</label>
+            <label>
+            <input id="definitely" type="radio" name="recommend" class="inline" value="definitely"/> Definitely 
+        </label></div>
+    <div class="form-group">
+        <label for="maybe">
+            <input id="maybe" type="radio" name="recommend" class="inline" value="maybe"/> Maybe
+        </label></div>
+    <div class="form-group">
+        <label for="not-sure">
+            <input id="not-sure" type="radio" name="recommend" class="inline" value="not-sure"/> Not sure
+        </label></div>
+    <div>
+        <label>
+            Which maps do you prefer the most?
+        </label>
+        <label for="maps">
+            <input type="checkbox" value="Ascent" name="maps" class="inline"> Ascent
+        </label>
+        <label for="maps">
+            <input type="checkbox" value="Breeze" name="maps" class="inline"> Breeze
+        </label>
+        <label for="maps">
+            <input type="checkbox" value="Bind" name="maps" class="inline"> Bind
+        </label>
+        <label for="maps">
+            <input type="checkbox" value="Pearl" name="maps" class="inline"> Pearl
+        </label>
+        <label for="maps">
+            <input type="checkbox" value="Split" name="maps" class="inline"> Split
+        </label>
+    </div>
+    <div>
+        <label>
+            Add your additional opinion down here.
+        </label>
+        <label for="additional-text">
+            <textarea id="additional-text" name="additional-text" rows="5" cols="30" placeholder="I would like if valorant introduced better nightmarkets..."></textarea>
+        </label>
+    </div>
+    </fieldset>
+    <input type="submit" value="Submit">
+   </form>
+</body>
+</html>
